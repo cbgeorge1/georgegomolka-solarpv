@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- Cameron George and Chelsea Gomolka-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="Module1.css">
+		<title>solarPV - A Solar Research Labratory</title>
+	</head>
+	  <body>
+        <div class="multi_color_border"></div>
+        <div class="topnav-right">
+            <ul>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="Login.html">Login/Register</a></li>
+            </ul>
+        </div>
+
+        <div class="topnav-bottom">
+            <ul>
+            <li><a href="Testing.html">Testing & Certification</a></li>
+            <li><a href="PVModule.html">PV Module</a></li>
+            <li><a href="PVSystems.html">PV Systems</a></li>
+            <li><a href="Analytics.html">Data Analytics</a></li>
+            <li><a href="Cybersecurity.html">Cybersecurity</a></li>
+            </ul>
+        </div>
+
+        <div class="logo">
+            <a href="Home.html">
+            <img src="solarPvlogo2.svg" alt="solarPV Logo"
+             height = 115 width = 350 /></a>
+        </div>
+
+        <div class="center">
+        <div class="form-header">Register</div>
+
+        <form id="form" class="form">
+            <div class="form1">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" id="username" />
+
+            </div>
+            <div class="form1">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password"/>
+            </div>
+            <div class="form1">
+                <label for="password2">Re-enter Password</label>
+                <input type="password" placeholder="Re-enter Password" id="password2"/>
+            </div>
+            <div class="form1">
+                <label for="prefix">Prefix</label>
+                <select name="prefix" id="prefix">
+                    <option value="dr">Dr</option>
+                    <option value="mr">Mr</option>
+                    <option value="ms">Ms</option>
+                    <option value="mrs">Mrs</option>
+                </select>
+            </div>
+            <div class="form1">
+                <label for="firstname">First Name</label>
+                <input type="text" placeholder="First Name" id="firstname"/>
+            </div>
+            <div class="form1">
+                <label for="middlename">Middle Name</label>
+                <input type="text" placeholder="Middle Name" id="middlename"/>
+            </div>
+            <div class="form1">
+                <label for="lastname">Last Name</label>
+                <input type="text" placeholder="Last Name" id="lastname"/>
+            </div>
+            <div class="form1">
+                <label for="email">Email</label>
+                <input type="email" placeholder="email@email.com" id="email" />
+            </div>
+            <div class="form1">
+                <label for="number">Office Phone Number</label>
+                <input type="tel" placeholder="###-###-####" id="number"/>
+            </div>
+            <div class="form1">
+                <label for="number">Cell Phone Number</label>
+                <input type="tel" placeholder="###-###-####" id="number"/>
+            </div>
+            <div class="form1">
+                <label for="company">Company Name</label>
+                <select name="company" id="company">
+                    <option value="analytica">Analytica</option>
+                    <option value="captiva">Captiva</option>
+                    <option value="digisweep">Digisweep</option>
+                    <option value="prointelligence">Pro Intelligence</option>
+                </select>
+            </div>
+            <div class="form1">
+                <label for="jobtitle">Job Title</label>
+                <select name="jobtitle" id="jobtitle">
+                    <option value="staff">Staff</option>
+                    <option value="client">Client</option>
+                </select>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+        <p id="error"></p>
+        </div>
+    
+        <div class="form-header">Sign In</div>
+        <form id="form2" class="form">
+            <div class="form2">
+                <label for="usernameTwo">Username</label>
+                <input type="text" placeholder="Username" id="usernameTwo" />
+            </div>
+            <div class="form2">
+                <label for="passwordTwo">Password</label>
+                <input type="password" placeholder="Password" id="passwordTwo"/>
+            </div>
+            <button id="submit2" type="submit">Sign In</button>
+        </form>
+        <p id="errorTwo"></p>
+
+        <footer class="footer">
+            <p>solarPV</p>
+            <p>6793 Sunset Lane, Atlanta GA 30309 | 770-999-9999 | www.solarpv.com | <a href="mailto:cbgeorg1@asu.edu"> solarpv@energy.com</a> </p>
+            <p>© 2019 All Rights Reserved</p>
+        </footer>
+        <div class="bottom-nav">
+          <ul>
+            <a href="Home.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="Map.html">Site Map</a>
+            <a href="Privacy.html">Privacy Policy</a>
+            <a href="Terms.html">Terms & Conditions</a>
+          </ul>
+          <script src="javascript/login.js"></script>
+        </div>
+      </body>
+</html>

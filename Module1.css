@@ -1,0 +1,397 @@
+/*General Styling */
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 17px;
+    background-color: #FCFCFC;
+    color: #211C20;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 200%;
+}
+
+.multi_color_border {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #008000 0%, #008000 25%, 
+       #494949 25%, #494949 50%, #008000 50%, #008000 75%,
+       #494949 75%, #494949 100%);
+}
+
+h1  {
+    font-size: 50px;
+    text-align: center;
+    margin: 55px;
+    padding: 5px;
+}
+     
+h2 {
+  font-size: 24px;
+  text-align: center;
+  text-transform:uppercase;
+  padding: 60px
+}
+
+/*Homepage Slider*/
+.auto-slider img{
+  display:block;
+}
+
+.auto-slider{
+  margin:auto;
+  width:1500px;
+  height:400px;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+
+.auto-slider_content{
+  list-style:none;
+  display:flex;
+  animation: slide 10s ease-in-out infinite;
+}
+
+.auto-slider_content li {
+  padding:0px;
+}
+
+.auto-slider_content:hover{
+  animation-play-state:paused;    
+}
+
+@keyframes slide{
+  25%{
+    transform:translateX(0);
+  }
+  30%, 55%{
+    transform:translateX(-740px);
+  }
+  60%, 85%{
+    transform:translateX(-1480px);
+  }
+}
+
+/*Nav*/
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+  
+.topnav-right {
+    width: 100%;
+    height: 65px;
+    background: #ccc;
+    padding: 0.1px;
+    text-align: right;
+    text-transform:uppercase;
+}
+
+.topnav-right ul li{
+  color: #494949;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.topnav-right ul li:last-child{
+    background: #008000;
+    margin-right:0;
+    border-radius:1px;
+    text-transform:uppercase;
+    letter-spacing:2.5px;
+}
+
+.topnav-right ul li:last-child a{
+    color: #fff;
+}
+
+.topnav-right ul li:hover:last-child{
+  background: #494949
+}
+
+.topnav-bottom {
+    background: #f9f9f9;
+    height: 65px;
+    padding: 0.1px;
+}
+
+.topnav-bottom ul{
+    width: 96%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav-bottom ul li{
+  color: #494949;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+h1:before {
+    content:' ';
+    display:block;
+    width: 100%;
+    border:0.5px solid black;
+    margin: 20px;
+}
+  
+li {
+  color: #211C20;
+  display: inline;
+  padding: 15px;
+  font-size: 18px
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  font-family: "Palatino", monospace; 
+  font-size: 14px;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  margin: 100px;
+  padding: 0px;
+}
+
+/* Place the navbar at the bottom of the page */
+.bottom-nav {
+  background-color: #ccc;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.bottom-nav a {
+  float: left;
+  display: block;
+  color: #211C20;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Links */
+a:link {
+  color: #211C20;
+}
+
+a:visited {
+  color: #211C20;
+}
+
+a:hover {
+  color: olivedrab;
+}
+
+a:active {
+  color: olivedrab;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* Form Styling */
+.form-header {
+  font-family: Arial;
+  font-size: 38px;
+  margin: 0;
+  padding: 0;
+  line-height: 200%;
+}
+
+.form {
+  padding: 100px 670px;	
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  width: 30%;
+}
+
+.form1, .form2 {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.form1 label, .form2 label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form1 input, .form2 input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.form button {
+	background-color: #008000;
+	border: 2px solid #008000;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+	width: 100%;
+}
+
+.form button:hover {
+  background-color: #007300;
+  color: white;
+}
+
+/* Bottom Nav Slider (Homepage) */
+#panel, #paneltitle {
+  padding: 5px;
+  text-align: center;
+  background-color: #ccc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+/* Geolocation Button */
+.button {
+  margin: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #008000;
+  border: 2px solid #008000;
+  border-radius: 4px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #007300;
+  color: white;
+}
+
+#div1, #div2 {
+  float: left;
+  width: 150px;
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+/* Testing and Certification Table */
+.wrapper .title {
+  padding: 50px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  color: rgb(0, 0, 0);
+}
+
+.wrapper .search_box {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 125px 0 150px;
+  border-radius: 3px;
+}
+
+.search_box input{
+  position: relative;
+  width: 30%;
+  height: 100%;
+}
+
+.wrapper .search_box input {
+  border: 0;
+  border-bottom: 2px solid #e5edfa;
+  width: 100%;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 36px;
+  padding: 10px;
+}
+
+::placeholder {
+  color: #6e6e6e;
+}
+
+.table_wrap {
+  width: 1000px;
+  margin: 50px auto 0;
+}
+
+.table_wrap ul li .item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 15px 0;
+  height: 50px;
+}
+
+.table_wrap ul li .item .holder,
+.table_wrap ul li .item .country {
+  width: 20%;
+  padding: 0 15px;
+}
+
+.table_wrap ul li .item .type,
+.table_wrap ul li .item .product {
+  width: 15%;
+  padding: 0 15px;
+}
+
+.table_wrap ul li .item .model,
+.table_wrap ul li .item .details {
+  width: 15%;
+  padding: 0 15px;
+}
+
+.table_header ul li .item {
+  border-bottom: 2px solid #eaeaea;
+}
+
+.table_body {
+  height: 300px;
+  overflow: auto;
+}
+
+.table_body ul li .item {
+  border-bottom: 1px solid #efefef;
+}
+
